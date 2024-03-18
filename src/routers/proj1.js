@@ -31,32 +31,32 @@ router.post("/proj1/pred_Prod", async function (req, res) {
   const targeted_productivity = req.body.targeted_productivity;
 
   const z = [
-    department_finishing * 0.00902471 +
-    department_sewing * -0.26634928 +
-    day_Monday * -0.17567976 +
-    day_Saturday * -0.54321405 +
-    day_Sunday * 0.20438993 +
-    day_Thursday * 0.70285988 +
-    day_Tuesday * -0.30612421 +
-    day_Wednesday * -0.13955637 +
-    team_1 * -0.52835679 +
-    team_2 * 0.02454169 +
-    team_3 * -0.4141645 +
-    team_4 * -0.18505903 +
-    team_5 * -0.18401458 +
-    team_6 * -0.05658406 +
-    team_7 * 0.61360215 +
-    team_8 * 0.460623 +
-    team_9 * -0.08048207 +
-    team_10 * 0.26407513 +
-    team_11 * 0.27095822 +
-    team_12 * -0.60342787 +
-    quarter * 0.19592769 +
-    no_of_workers * -0.07893121 +
-    over_time * -0.00002273 +
-    smv * 0.11908515 +
-    incentive * -0.0010773 +
-    targeted_productivity * 0.194649371 * -1
+    department_finishing * -1.80985375e-02 +
+    department_sewing * 2.77587742e-01 +
+    day_Monday * 1.79857606e-01 +
+    day_Saturday * 5.59618370e-01 +
+    day_Sunday * -2.12074484e-01 +
+    day_Thursday * -7.24832262e-01 +
+    day_Tuesday * 3.14369284e-01 +
+    day_Wednesday * 1.42550691e-01 +
+    team_1 * 5.46898514e-01 +
+    team_2 * -2.62356749e-02 +
+    team_3 * 4.29241611e-01 +
+    team_4 * 1.91484785e-01 +
+    team_5 * 1.90414063e-01 +
+    team_6 * 5.76303594e-02 +
+    team_7 *  -6.35805972e-01 +
+    team_8 * -4.77345863e-01 +
+    team_9 * -8.46103418e-02 +
+    team_10 * -2.74361564e-01 +
+    team_11 * -2.81829355e-01 +
+    team_12 * 6.24008643e-01 +
+    quarter * -2.05349903e-01 +
+    no_of_workers *7.67109133e-02  +
+    over_time *1.95321255e-05  +
+    smv * -1.13023925e-01 +
+    incentive * 9.93071440e-04 +
+    targeted_productivity * 1.95961127e-01
   ];
 
   const productivity = 1 / (1 + Math.exp(-z));
